@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import StyledNavbar from "../components/styledComponents/StyledNavbar"
 import GlobalStyles from "../components/styledComponents/GlobalStyles"
 import StyledBurgerIcon from "../components/styledComponents/StyledBurgerIcon"
+import Hero from '../components/Hero';
 
 export default () => {
   
@@ -12,7 +13,8 @@ export default () => {
     <>
       <GlobalStyles />
       <StyledBurgerIcon handleIsOpen={ handleIsOpen }/>
-      <StyledNavbar isOpen={ isOpen } />      
+      <StyledNavbar isOpen={ isOpen } />    
+      <Hero />  
     </>
   )
 }
